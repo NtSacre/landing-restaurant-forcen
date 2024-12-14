@@ -1,0 +1,10 @@
+:root {
+    --color-primary: #195A00;
+    --color-primary-yellow: #FF9F0D;
+    --color-white: #ffffff;
+    --color-black-opa50: rgba(33, 34, 36, 0.5); 
+    --color-black: #000000;
+
+    --text-primary: "Roboto", sans-serif;
+    --text-secondary: "Inter", sans-serif;
+}
