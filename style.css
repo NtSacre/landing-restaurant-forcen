@@ -1,10 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --color-primary: #195A00;
     --color-primary-yellow: #FF9F0D;
     --color-white: #ffffff;
     --color-black-opa50: rgba(33, 34, 36, 0.5); 
     --color-black: #000000;
+    --color-secondary: #333333;
 
     --text-primary: "Roboto", sans-serif;
     --text-secondary: "Inter", sans-serif;
 }
+
+body{
+    background-color: var(--color-white);
+}
+
+/* NavBar start */
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 10px 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a{
+    color: var(--color-primary);
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: var(--text-primary);
+    font-weight: bold;
+}
+.menu-burger{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-burger span {
+    width: 24px;
+    height: 3px;
+  
+    background-color: var(--color-black);
+}
+
+.navi-links ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 15px;
+    list-style: none;
+}
+
+.navi-links ul li a{
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-family: var(--text-secondary);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+@media (max-width: 768px){
+
+    nav{
+        padding: 10px;
+    }
+    .menu-burger{
+        display: flex;
+    }
+
+    .navi-links{
+        position: absolute;
+        top: 58px;
+        left: 0;
+        background-color: var(--color-white);
+        width: 100%;
+        gap: 0;
+        max-height: 0px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .navi-links ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navi-links ul li a{
+        color: var(--color-secondary);
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    .navi-links.active{
+        max-height: 300px;
+    }
+
+    #navi-links{
+        transition: all 0.7s;
+    }
+}
+
+
+/* NavBar start */
