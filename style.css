@@ -27,7 +27,7 @@ nav{
     justify-content: space-between;
     align-items: center;
    
-    padding: 10px 0px;
+    padding: 20px 10px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -69,7 +69,73 @@ nav{
     font-size: 1em;
 }
 
+/* End Navbar */
+
+/* Hero start */
+
+.hero{
+    border-bottom: 2px solid var(--color-black);
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 100px;
+
+}
+
+.hero span{
+    font-family: "Miniver", cursive;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-primary);
+}
+.hero h1{
+    font-family: var(--text-primary);
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--color-black);
+    margin-top: 6px;
+}
+
+.hero p{
+    font-family: var(--text-secondary);
+    font-size: 16px;
+    color: var(--color-black);
+    margin-top: 34px;
+}
+
+.btn-gp-hero {
+    display: flex;
+    gap: 31px;
+}
+.full-btn{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 16px 48px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: var(--text-secondary);
+    font-weight: bold;
+    border-radius: 6px;
+}
+.empty-btn{
+   border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    padding: 16px 48px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: var(--text-secondary);
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* End Hero */
+
+
+
 @media (max-width: 768px){
+
+    
 
     nav{
         padding: 10px;
@@ -82,7 +148,7 @@ nav{
         position: absolute;
         top: 58px;
         left: 0;
-        background-color: var(--color-white);
+        background-color: var(--color-primary-yellow);
         width: 100%;
         gap: 0;
         max-height: 0px;
@@ -94,6 +160,7 @@ nav{
         flex-direction: column;
         align-items: center;
         padding: 20px;
+      
     }
 
     .navi-links ul li a{
@@ -108,7 +175,86 @@ nav{
     #navi-links{
         transition: all 0.7s;
     }
+
+/* Hero start in media queries */
+    .hero{
+        border-bottom: 1px solid var(--color-black);
+      
+        max-width: 1200px;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+     
+       
+    }
+    
+    .hero span{
+        font-family: "Miniver", cursive;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--color-primary);
+    }
+    .hero h1{
+        font-family: var(--text-primary);
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--color-black);
+        margin-top: 6px;
+    }
+    
+    .hero p{
+        font-family: var(--text-secondary);
+        font-size: 14px;
+        color: var(--color-black);
+        margin-top: 14px;
+    }
+    
+    .btn-gp-hero {
+        display: flex;
+        gap: 11px;
+    }
+    .full-btn{
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        padding: 16px 11px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: var(--text-secondary);
+        font-weight: bold;
+        border-radius: 6px;
+    }
+
+    .empty-btn{
+       border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+        background-color: var(--color-white);
+        padding: 16px 11px;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: var(--text-secondary);
+        font-weight: bold;
+        border-radius: 6px;
+    }
+
+    .img-hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+    }
+
+    .img-hero img{
+        width: 334.66px;
+       
+    
+    }
+
+
 }
 
 
-/* NavBar start */
+
+
+
+
