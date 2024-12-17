@@ -320,8 +320,8 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: none;
-     
+      
+        border-left: 4px solid var(--color-primary);
     
     
     }
