@@ -27,7 +27,7 @@ nav{
     justify-content: space-between;
     align-items: center;
    
-    padding: 20px 10px;
+    padding: 24px 10px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -77,9 +77,13 @@ nav{
     border-bottom: 2px solid var(--color-black);
     margin: 0 auto;
     max-width: 1200px;
-    padding-top: 100px;
+    padding-top: 50px;
+    
 
 }
+
+
+
 
 .hero span{
     font-family: "Miniver", cursive;
@@ -129,7 +133,43 @@ nav{
     border-radius: 6px;
 }
 
+
+
 /* End Hero */
+
+/* Start Why us */
+
+.why-us{
+ 
+    padding: 50px 0px 50px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+   
+}
+
+.why-us img{
+     width: 80px;
+}
+
+.whs-col{
+    display: flex;
+  
+    align-items: center;
+    border-left: 4px solid var(--color-primary);
+ 
+    gap: 5px;
+
+}
+
+.why-us h5{
+    font-family: var(--text-primary);
+    font-weight: bold;
+    font-size: 24px;
+    color: #4F4F4F;
+}
+
+/* End Why us */
 
 
 
@@ -241,6 +281,8 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 50px;
+        
   
     }
 
@@ -250,6 +292,87 @@ nav{
     
     }
 
+
+
+
+
+}
+
+@media (min-width:426px) and (max-width: 768px){
+
+    /* Start Why us in media queries */
+
+    .why-us{
+        display: flex;
+      align-items: center;
+        justify-content: center;
+    
+        padding: 20px 0px;
+       
+    
+    }
+    
+    .why-us img{
+         width: 50px;
+    }
+    
+    .whs-col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+     
+    
+    
+    }
+    
+    .why-us h5{
+        font-family: var(--text-primary);
+        font-weight: bold;
+        font-size: 18px;
+        color: #4F4F4F;
+    }
+    
+    /* End Why us */
+
+}
+
+@media (max-width: 425px){
+
+    /* Start Why us in media queries */
+
+    .why-us{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 0px;
+        gap: 20px;
+    
+    }
+    
+    .why-us img{
+         width: 80px;
+    }
+    
+    .whs-col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+     
+    
+    
+    }
+    
+    .why-us h5{
+        font-family: var(--text-primary);
+        font-weight: bold;
+        font-size: 24px;
+        color: #4F4F4F;
+    }
+    
+    /* End Why us */
 
 }
 
