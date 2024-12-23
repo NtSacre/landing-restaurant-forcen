@@ -225,20 +225,25 @@ hr{
 
 .left, .right{
     display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid var(--color-black);
+    
+    border-bottom: 2px dotted var(--color-black);
     padding: 5px 0px;
+    
+    
 }
 
 .left img, .right img{
     width: 106px;
     height: 101px;
+    display: block;
+    margin-right: 15px;
    
 }
 
 .menu-item-center{
     display: flex;
     flex-direction: column;
+    margin-right: auto;
 }
 
 .menu-item-center .food-name{
@@ -263,9 +268,65 @@ hr{
     font-weight: bold;
     color: var(--color-primary);
     margin-right: 15px;
+    text-transform: uppercase;
     
 }
+.open-button{
+    width: 20%;
+    margin-top: 30px;
+    margin-left: 40%;
+}
 /* End menu */
+
+/*popup menu start*/
+.hidden{
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+    height: 80vh;
+    width: 100%;
+    overflow-y: auto;
+    padding: 30px;
+    
+    
+}
+
+.hidden h2,.hidden p,.hidden .menu-button .outline span, .hidden .line .menu-item-center p{
+    color: white;
+} 
+.hidden .line .right,.hidden .line .left{
+    border-bottom: 2px dotted var(--color-white);
+}
+.hidden .line .price{
+    color: var(--color-primary);
+}
+.popup-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+}
+.close-button{
+    position: relative;
+    left: 1100px;
+    border: 1px solid;
+    padding: 5px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 1000;
+    
+}
+/*popup menu end*/
 
 
 @media (max-width: 768px){
@@ -470,81 +531,6 @@ hr{
     /* End Why us */
 
 }
-
-/*start  menu*/
-
-.menu-type{
-    max-width: 1435px;
-    margin: 0 auto;
-
-}
-
-.menu-list{
-    padding: 20px;
-    
-}
-
-.menu-element{
-    display: flex;
-    just
-    border-bottom: 2px dotted var(--color-black);
-    padding: 0px;
-    margin-bottom: 10px;
-    
-}
-
-.menu-element .food-image{
-    width: 106px;
-    height: 101px;
-    border-radius: 6px;
-    padding: 0;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    border: solid;
-    
-}
-
-.food-image img{
-    width: 106px;
-    height: 101px;
-}
-
-.menu-element .menu-description{
-    font-family: var(--text-secondary);
-}
-
-.menu-description h4{
-    font-size: 24px;
-    margin-bottom: 5px;
-    line-height: 24px;
-}
-
-.menu-description p{
-    font-size: 16px;
-    margin-bottom: 10px;
-    line-height: 24px;
-    color: var(--color-secondary);
-    
-}
-
-.menu-description span{
-    font-size: 16px;
-    font-weight: lighter;
-}
-
-.price{
-    font-size: 24px;
-    font-weight: bold;
-    font-family: var(--text-secondary);
-    color: var(--color-primary);
-    text-align: right;
-    margin-right: 0px;
-    border: solid;
-}
-
-
-
-/*end menu*/
 
 
 
