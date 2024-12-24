@@ -1,0 +1,45 @@
+.menu{
+        margin-top: 283px;
+        margin-left: auto;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+    
+    .menu-button{
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    }
+    
+    .menu-button .outline{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        max-width: 415px;
+        margin-top: 80px;
+        
+    }
+    .outline span{
+        
+        letter-spacing: -2px;
+    }
+    .menu hr{
+        margin-bottom: 20px;
+    }
+
+
+    .left img, .right img{
+        width: 90px;
+        height: 85px;
+        display: block;
+        margin-right: 10px;
+        margin-left: 7px;
+       
+    }
+
+    .menu-item-center .food-name{
+        
+        font-size: 18px;
+    }
