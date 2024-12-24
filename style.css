@@ -254,7 +254,7 @@ hr{
     margin-bottom: 0px;
 }
 
-.menu-item-center .foof-description .food-cal{
+.menu-item-center .food-cal{
     font-family: var(--text-secondary);
     font-size: 16px;
     font-weight: 400;
@@ -322,7 +322,7 @@ hr{
 }
 .close-button{
     position: relative;
-    left: 1100px;
+    left: 95%;
     border: 1px solid;
     padding: 5px 10px;
     font-size: 24px;
@@ -344,7 +344,7 @@ hr{
 
 .special-item{
     width: 100%;
-    height: 60vh;
+    height: 492px;
     border: none;
     box-shadow: 0px 2px 2px 2px #4F4F4F;
     display: flex;
@@ -365,9 +365,10 @@ hr{
 }
 
 .special-item .special-btn{
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 10px 0px;
+    margin:auto;
+    width: 80%;
+    height: 20%;
 }
 
 .special-item .special-price{
@@ -553,6 +554,71 @@ hr{
     
     /* End Why us */
 
+    /*start menu queryset*/
+    .menu-button .outline{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        max-width: 415px;
+        margin-top: 80px;
+        
+    }
+    .left img, .right img{
+        width: 106px;
+        height: 101px;
+        margin-right: 10px;
+        margin-left: 20px;
+        
+       
+    }
+    .menu-item-center .food-name{
+        font-family: var(--text-secondary);
+        font-size: 18px;
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 0px;
+    }
+
+    /*start speical-offer queryset*/
+    .special-offer-items{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .special-item{
+        width: 500px;
+        height: 592px;
+        border: none;
+        box-shadow: 0px 2px 2px 2px #4F4F4F;
+        display: flex;
+        flex-direction: column;
+       border-radius: 6px;
+       margin-top: 20px;
+       margin-left: 50%;
+    }
+
+    .special-item img{
+        padding: 47px;
+        margin-bottom: 5px;
+        width: auto;
+        height: 400px;
+    }
+    .special-item .special-price{
+        width: 190px;
+        height:190px;
+        padding-top: 80px;
+        padding-bottom: 90px;
+        padding-right: auto;
+        padding-left: auto;
+        position: relative;
+        bottom:32vh;
+        left: 50%;
+        border-color: var(--color-black);
+        border-style: dotted;
+        border-radius: 50%;
+        background-color: var(--color-white);
+     }
 }
 
 @media (max-width: 425px){
@@ -591,7 +657,93 @@ hr{
     }
     
     /* End Why us */
+    /*start menu mediaquery*/
+    .menu-button .outline{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        max-width: 415px;
+        margin-top: 80px;
+        
+    }
+    .outline span{
+        
+        letter-spacing: -2px;
+    }
 
+    .left, .right{
+        display: flex;
+        
+        border-bottom: 2px dotted var(--color-black);
+        padding: 5px 0px;
+        
+        
+    }
+    .left img, .right img{
+        width: 90px;
+        height: 85px;
+        margin-right: 10px;
+        margin-left: 15px;
+       
+    }
+    
+    .menu-item-center .food-name{
+        font-family: var(--text-secondary);
+        font-size: 18px;
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 0px;
+    }
+    .menu-item-center .food-cal{
+        font-family: var(--text-secondary);
+        font-size: 16px;
+        font-weight: 400;
+        color: #333333;
+       
+      
+    }
+    .menu-item-center .foof-description{
+        margin-bottom: 0px;
+    }
+    
+   
+    
+    /*start speical-offer queryset*/
+    .special-item{
+        width: auto;
+        height: 492px;
+        border: none;
+        box-shadow: 0px 2px 2px 2px #4F4F4F;
+        display: flex;
+        flex-direction: column;
+       border-radius: 6px;
+       margin: 20px;
+       
+        
+    } 
+    .special-item img{
+        padding: 47px;
+        margin-bottom: 5px;
+        width: auto;
+        height: 320px;
+    }
+    .special-item .special-price{
+        width: 120px;
+        height:120px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-right: auto;
+        padding-left: auto;
+        position: relative;
+        bottom:32vh;
+        left: 50%;
+        border-color: var(--color-black);
+        border-style: dotted;
+        border-radius: 50%;
+        background-color: var(--color-white);
+     }
+    
 }
 
 
