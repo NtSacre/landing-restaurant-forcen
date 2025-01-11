@@ -402,19 +402,26 @@ hr{
     margin-bottom: 0;
 }
 
-
+.reservation div h2{
+    color: var(--color-primary-yellow);
+}
 .reservation-form{
-    padding: 30px;
+    padding:30px;
     background-color: transparent;
+    
+    width: 100%;
+  
 }
 .form-line{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    
 }
 .reservation-input{
    display: block;
     height: 40px;
-    width: 500px;
+   width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -427,19 +434,29 @@ hr{
 
     
 }
+.input-left{
+    margin-right: 50px;
+}
+.input-right{
+    margin-left: 50px;
+}
 .reservation-input::placeholder{
     color: #ffffff;
     text-transform: capitalize;
+    font-family: var(--text-primary);
 }
 
 .reservation-form textarea{
     width: 100%;
+    max-width: 100%;
+    display: block;
     height: 172px;
-    margin: auto;
+   margin-top: 20px;
     padding-left: 20px;
     padding-top: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     border: none;
+    font-family: var(--text-primary);
 }
 .reservation-form textarea::placeholder{
     color: #ffffff;
@@ -455,9 +472,21 @@ hr{
     background-color: transparent;
     color: var(--color-white);
     font-weight: 600px;
+    transition: all 0.3s ease-in;
+    
 }
 .reservation-button button:hover{
     background-color: #FF9F0D;
+    transform: scale(1.1);
+   
+}
+.reservation-form textarea,.reservation-input{
+    transition: all ease-in 0.3s;
+}
+.reservation-form textarea:focus,.reservation-input:focus{
+    border: none;
+    box-shadow: 0 12 -6px rgba(253, 253, 253, 0.5);
+    transform: translate(0px,-5px);
 }
 
 
@@ -687,6 +716,22 @@ hr{
         border-radius: 50%;
         background-color: var(--color-white);
      }
+
+     /*reservation queryset start*/
+     .reservation-button button{
+        display: block;
+        border-color: #FF9F0D;
+        background-color: transparent;
+        color: var(--color-white);
+        font-weight: 600px;
+        transition: all 0.3s ease-in;
+        
+        width: 30%;
+    }
+    .reservation-button button:hover{
+        background-color: #FF9F0D; 
+        transform: scale(1.1);
+    }
 }
 
 @media (max-width: 425px){
@@ -811,6 +856,61 @@ hr{
         border-radius: 50%;
         background-color: var(--color-white);
      }
+    
+     /*reservation queryset start*/
+     .reservation{
+   
+        background-color: #4F4F4F;
+        background-image: url("assets/fried-wings-plate_23-2147717053.png");
+        background-size: cover;
+        background-position: left center;
+        margin-top: 283px;
+        margin-left: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+     .form-line{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .reservation-input{
+        display: block;
+         height: 40px;
+        width: 100%;
+         margin-top: 20px;
+         margin-bottom: 20px;
+         background-color: rgba(0, 0, 0, 0.6);
+         border:none;
+         padding-left: 20px;
+         padding-right: 10px;
+         color:#ffffff;
+         border-radius: 2px;
+      
+     
+         
+     }
+     .input-left{
+         margin-right: auto;
+     }
+     .input-right{
+         margin-left: auto;
+     }
+     .reservation-button button{
+        display: block;
+        border-color: #FF9F0D;
+        background-color: transparent;
+        color: var(--color-white);
+        font-weight: 600px;
+        transition: all 0.3s ease-in;
+        width: 40%;
+        background-color: #FF9F0D;
+        
+    }
     
 }
 

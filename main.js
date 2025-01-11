@@ -21,3 +21,4 @@ function closeMenuPopup(){
 
 openButton.addEventListener('click',openMenuPopup);
 closeButton.addEventListener('click',closeMenuPopup);
+
