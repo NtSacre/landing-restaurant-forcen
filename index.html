@@ -41,13 +41,13 @@
  <!-------- Navi-links start------->
  <div class="navi-links" id="navi-links">
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Specials Offers</a></li>
-        <li><a href="#">Booking</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#special_offer">Specials Offers</a></li>
+        <li><a href="#reservation">Booking</a></li>
+        <li><a href="#testimonial">Testimonials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contacts">Contact</a></li>
     </ul>
 </div>
 
@@ -104,7 +104,7 @@
     <!-- Why us end-->
 
     <!-------- Menu start------>
-    <section class="menu">
+    <section class="menu" id="menu">
 <h2>Our Food Menu</h2>
 <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue</p>
 
@@ -425,7 +425,7 @@
     <!-- Menu end-->
         
     <!-------- Special offer start------>
-    <section class="special-offer">
+    <section class="special-offer" id="special_offer">
         
         <h2>Today Special Offers</h2>
         <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue</p>
@@ -478,23 +478,23 @@
     <!-- Special offer end-->
 
     <!-------- Reservation start------>
-    <section class="reservation">
+    <section class="reservation" id="reservation">
         
         <div class="container">
             <h2>Réservation</h2>
-            <form action="" class="reservation-form">
+            <form action="" class="reservation-form" id="reservation-form">
             
                 <div class="form-line">
                     <input type="text" placeholder="Nom et Prenom" id="noms" class="reservation-input input-left">
                     <input type="date" placeholder="Date et Heure" id="date" class="reservation-input input-right"><span></span>
                 </div>
                 <div class="form-line">
-                    <input type="tel" placeholder="Contact" id="contact" class="reservation-input input-left">
-                    <input type="number" placeholder="Nombre de personne" id="noms" class="reservation-input input-right"><span></span>
+                    <input type="tel" placeholder="Contact" id="telephone" class="reservation-input input-left">
+                    <input type="number" placeholder="Nombre de personne" id="nombre-personne" class="reservation-input input-right"><span></span>
                 </div>
                 <textarea name="" id="" placeholder="Commentaire de demande speciale"></textarea>
                 <div class="reservation-button">
-                    <button class="empty-btn"> Envoyer </button>
+                    <button class="empty-btn" type="submit"> Envoyer </button>
                 </div>
                 
                 
@@ -506,7 +506,7 @@
 
 
     <!-------- Gallery start------>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2>Our Popular Dishes</h2>
         <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue</p>
        <div class="container gallery-container">
@@ -523,7 +523,7 @@
 
 
     <!-------- Testimonials start------>
-    <section class="testimonials">
+    <section class="testimonials" id="testimonial">
         <h2>Trusted by Thousands of Happy Customer</h2>
         <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue</p>
         <div class="row testimonial-items " id="testimonial-container">
@@ -664,10 +664,10 @@
     <!-- Testimonials end-->
 
     <!-------- Contact start------>
-    <section class="contact ">
-        <h2>Trusted by Thousands of Happy Customer</h2>
+    <section class="contact " id="contacts">
+        <h2>Contact us</h2>
         <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue</p>
-        <div class="row container contact-div">
+        <div class="row  contact-div">
             <div class="col-md-6 col-sm-12 col-lg-6">
                 <div class="contact-info">
                     <div>
@@ -705,41 +705,41 @@
   <!-- Footer start-->
 <footer>
     <div class="container">
-        <div class="row">
+        <div class="row footer-part1">
             <div class="col-md-3 col-sm-12 col-lg-3">
-                <h2></h2>
-                <p></p>
-                <a href=""><img src="assets/" alt=""></a>
-                <a href=""><img src="assets/" alt=""></a>
-                <a href=""><img src="assets/" alt=""></a>
+                <h2 class="footer-logo">G5food</h2>
+                <p>Our vision is to provide convenience and help increase your sales business.</p>
+                <a class="social-net" href="#"><img src="assets/facebook 1.png" alt=""></a>
+                <a class="social-net" href="#"><img src="assets/whatsapp 1.png" alt=""></a>
+                <a class="social-net" href="#"><img src="assets/tik-tok 1.png" alt=""></a>
             </div>
             <div class="col-md-3 col-sm-12 col-lg-3">
-                <h4></h4>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <h4>Liens</h4>
+                <p><a href="index.html">Acceuil</a></p>
+                <p><a href="#menu">Menu</a></p>
+                <p><a href="#special_offer">Offres spéciales</a></p>
+                <p><a href="#reservation">Réservation</a></p>
             </div>
             <div class="col-md-3 col-sm-12 col-lg-3">
-                <h4></h4>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <h4>Autres liens</h4>
+                <p><a href="#gallery">Galerie</a></p>
+                <p><a href="#testimonial">Témoignages client</a></p>
+                <p><a href="#reservation">Réservation</a></p>
+                <p><a href="#gallery">Galerie</a></p>
             </div>
             <div class="col-md-3 col-sm-12 col-lg-3">
-                <h2></h2>
-                <p></p>
-                <form action="">
-                    <input type="text">
+                <h2 class="newsletter">S’inscrire a la newsletter</h2>
+                <p>Lorem ipsum dolor sit amet, consecteturelit. </p>
+                <form action="" class="newsletter-form"> 
+                    <input type="email" placeholder="Entrer votre adresse mail">
                     <button>Envoyer</button>
                 </form>
             </div>
         </div>
-        <hr>
-        <div class="row">
+        <hr class="footer-divider">
+        <div class="row footer-part2">
             <div class="col-md-3 col-sm-12 col-lg-3">
-                <p></p>
+                <p>©2024 Groupe 5. All rights reserved</p>
             </div>
             <div class="col-md-3 col-sm-12 col-lg-3">
 
@@ -747,11 +747,10 @@
             <div class="col-md-3 col-sm-12 col-lg-3">
 
             </div>
+           
+            
             <div class="col-md-3 col-sm-12 col-lg-3">
-                <p></p>
-            </div>
-            <div class="col-md-3 col-sm-12 col-lg-3">
-                <p></p>
+                <p><a href="#">Privacy & Policy</a></p>
             </div>
         </div>
     </div>

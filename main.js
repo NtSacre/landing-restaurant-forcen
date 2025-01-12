@@ -49,3 +49,11 @@ function scrollRight(){
 }
 
 console.log(leftArrow,rightArrow,testimonialContainer)
+
+//traitement du formulaire de reservation
+let reservation=document.querySelector('#reservation-form');
+let noms=document.querySelector('#noms');
+let date=document.querySelector('#date');
+let telephone=document.querySelector('#telephone');
+let message=document.querySelector('#message');
+console.log(reservation,noms,date,telephone,message);
