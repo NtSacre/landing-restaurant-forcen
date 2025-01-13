@@ -55,5 +55,87 @@ let reservation=document.querySelector('#reservation-form');
 let noms=document.querySelector('#noms');
 let date=document.querySelector('#date');
 let telephone=document.querySelector('#telephone');
+let nbrPersonne=document.querySelector('#nombre-personne')
 let message=document.querySelector('#message');
-console.log(reservation,noms,date,telephone,message);
+let textRegex=/^[A-Za-zÀ-ÖØ-öø-ÿ'-\s]+$/;
+let telRegex=/^[0-9]{9,}$/
+let emailRegex=/^[a-z0-9-._]+@[a-z0-9-._]+\.[a-z0-9-._]{2,}$/
+
+function fieldEmpty(field,event,errMsg){
+    let isValid=true;
+    let error=document.querySelector(field);
+    error.innerHTML=errMsg;
+    error.style.color='red';
+    event.preventDefault();
+    isValid=false;
+}
+reservation.addEventListener('submit',function(event){
+    if(!noms.value.trim()){
+        let err="Le nom ne doit pas contenir de chiffres";
+        fieldEmpty('#name-rror',event,err);
+        
+    }else if(!textRegex.test(noms.value)){
+        error=document.querySelector('#name-error');
+        error.innerHTML="Le nom ne doit pas contenir de chiffres";
+        error.style.color='red';
+        error.style.display='block';
+        reservation.setAttribute('hidden','hidden');
+        event.preventDefault();
+        isValid=false;
+    }
+  
+    if(!telephone.value.trim()){
+        let err="Le champ numero de telephone est requis"
+        fieldEmpty('#tel-error',event,err);
+    }else if(!telRegex.test(telephone.value)){
+        error=document.querySelector('#tel-error');
+        error.innerHTML="Le numero de telephone ne doit pas contenir de lettre et doit avoir au moins 9 chiffres";
+        error.style.color='red';
+        error.style.display='block';
+        event.preventDefault();
+        isValid=false;
+    }
+    if(isValid){
+        let successMsg=document.querySelector('#reservation-success');
+        successMsg.innerHTML="Votre reservation a ete pris en compte.";
+        contactForm.setAttribute('hidden','hidden');
+        successMsg.removeAttribute('hidden');
+        successMsg.style.color='green';
+        successMsg.style.display='block';
+        
+    }
+
+});
+
+//traitement du formulaire contact
+let names=document.querySelector('#names');
+let email=document.querySelector('#mail');
+let contact=document.querySelector('#numero-tel');
+let contactForm=document.querySelector('#contact-forms');
+
+contactForm.addEventListener('submit',function(event){
+    let isValid=true;
+    if(!telRegex.test(contact.value)){
+        error=document.querySelector('#contact-error');
+        error.innerHTML="Le numero de telephone ne doit pas contenir de lettre et doit avoir au moins 9 chiffres";
+        error.style.color='red';
+        event.preventDefault();
+        isValid=false;
+    }
+    if(!textRegex.test(names.value)){
+        error=document.querySelector('#names-error');
+        error.innerHTML="Le nom ne doit pas contenir de chiffres";
+        error.style.color='red';
+        event.preventDefault();
+        isValid=false;
+    }
+    if(isValid){
+        let successMsg=document.querySelector('#contact-success');
+        successMsg.innerHTML="Merci de nous avoir contacté.";
+        contactForm.setAttribute('hidden','hidden');
+        successMsg.removeAttribute('hidden');
+        successMsg.style.color='green';
+        successMsg.style.display='block';
+        event.preventDefault();
+    }
+});

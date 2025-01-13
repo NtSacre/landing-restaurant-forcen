@@ -481,16 +481,20 @@
     <section class="reservation" id="reservation">
         
         <div class="container">
+            <h3 id="reservation-success" hidden></h3>
             <h2>Réservation</h2>
-            <form action="" class="reservation-form" id="reservation-form">
-            
+            <form action="" method="post" class="reservation-form" id="reservation-form">
+                <span id="name-error"></span>
                 <div class="form-line">
-                    <input type="text" placeholder="Nom et Prenom" id="noms" class="reservation-input input-left">
-                    <input type="date" placeholder="Date et Heure" id="date" class="reservation-input input-right"><span></span>
+                    
+                    <input type="text" placeholder="Nom et Prenom" id="noms" class="reservation-input input-left" required>
+                    <input type="date" placeholder="Date et Heure" id="date" class="reservation-input input-right" required><span></span>
                 </div>
+                <span id="tel-error"></span>
                 <div class="form-line">
-                    <input type="tel" placeholder="Contact" id="telephone" class="reservation-input input-left">
-                    <input type="number" placeholder="Nombre de personne" id="nombre-personne" class="reservation-input input-right"><span></span>
+                    
+                    <input type="tel" placeholder="Contact" id="telephone" class="reservation-input input-left" required>
+                    <input type="number" placeholder="Nombre de personne" id="nombre-personne" class="reservation-input input-right" required><span></span>
                 </div>
                 <textarea name="" id="" placeholder="Commentaire de demande speciale"></textarea>
                 <div class="reservation-button">
@@ -499,6 +503,7 @@
                 
                 
             </form>
+            
         </div>
         
     </section>
@@ -685,13 +690,15 @@
                 </div>  
             </div>
             <div class="col-md-6 col-sm-12 col-lg-6 contact-form">
-                <form action="">
-                    <input type="text" placeholder="Nom et Prenom">
-                    <input type="tel" placeholder="Telephone">
-                    <input type="email" placeholder="Email">
+                <h3 id="contact-success" hidden></h3>
+                <form action="" id="contact-forms" method="post">
+                    <span id="names-error"></span><input type="text" placeholder="Nom et Prenom" id="names" required>
+                    <span id="contact-error"></span><input type="tel" placeholder="Telephone" id="numero-tel" required>
+                    <span id="mail-error"></span><input type="email" placeholder="Email" id="mail">
                     <textarea name="" id="" placeholder="Message"></textarea>
                     <button type="submit">Envoyer</button>
                 </form>
+                 
             </div>
         </div>
     </section>
